@@ -28,6 +28,7 @@ build
 
 # ENV
 .env
+.env.*
 
 # Eslint cache
 .eslintcache

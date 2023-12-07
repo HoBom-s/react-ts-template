@@ -30,5 +30,8 @@ export default defineConfig({
 
     // Build 후 기존 소스코드 원복 불가
     sourcemap: true,
+
+    // minify
+    minify: true,
   },
 });

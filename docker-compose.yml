@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: hb-frontend
+
+    container_name: hb-frontend
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    ports:
+      - "3000:3000"
+
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - /usr/src/app/node_modules
