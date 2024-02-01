@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 import styled, { css } from "styled-components";
 
-import { FLEX_CENTER } from "@/utils";
+import { FLEX_CENTER, COLORS } from "@/utils";
 
 const MIDDLE = css`
   width: 80px;
@@ -13,6 +13,12 @@ const LARGE = css`
   min-height: 50px;
 `;
 
+const PRIMARY = css`
+  color: ${COLORS.green400};
+  border: 1px solid ${COLORS.green400};
+  background-color: ${COLORS.white};
+`;
+
 const sizes = {
   md: MIDDLE,
   lg: LARGE,
@@ -20,16 +26,25 @@ const sizes = {
 
 const ButtonStyle = styled.button<Props>`
   ${FLEX_CENTER};
-  cursor: pointer;
-  height: auto;
-  min-height: 40px;
-  text-decoration: none;
   border: none;
-  border-radius: 4px;
+  height: auto;
+  cursor: pointer;
+  min-height: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  color: ${COLORS.white};
+  ${(props) =>
+    props.$primary
+      ? PRIMARY
+      : css`
+          background-color: ${COLORS.green400};
+        `};
   ${(props) => (props.size ? sizes[props.size] : "")}
 `;
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+  $primary?: boolean;
   size?: "md" | "lg";
 }
 
