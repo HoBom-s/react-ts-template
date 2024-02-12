@@ -48,6 +48,11 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "md" | "lg";
 }
 
+/**
+ * @example
+ *      <Button $primary size="md">BUTTON</Button>
+ *      <Button size="lg">잘보이니</Button>
+ */
 export const Button = ({ children, ...props }: Props) => {
   return (
     <ButtonStyle type="button" {...props}>
