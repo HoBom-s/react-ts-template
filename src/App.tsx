@@ -1,4 +1,11 @@
-import { Button, Input, Modal, useModal } from "@/lib";
+import {
+  Button,
+  Input,
+  Modal,
+  useModal,
+  ErrorMessage,
+  SuccessMessage,
+} from "@/lib";
 
 const App = () => {
   const { isOpen, handleModalStateChange } = useModal();
@@ -28,6 +35,8 @@ const App = () => {
         }}
         close={handleModalStateChange}
       />
+      <ErrorMessage message="error message" />
+      <SuccessMessage message="success message" />
     </div>
   );
 };
