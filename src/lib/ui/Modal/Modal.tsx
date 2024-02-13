@@ -80,8 +80,6 @@ const CancelButton = styled(Button)`
   margin-right: 8px;
 `;
 
-ReactModal.setAppElement("#root");
-
 interface Props {
   title: string;
   content: ChildrenAlias;
@@ -91,6 +89,8 @@ interface Props {
   };
   close: () => void;
 }
+
+ReactModal.setAppElement("#hb-modal-root");
 
 /**
  * @example
