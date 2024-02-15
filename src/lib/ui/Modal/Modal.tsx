@@ -66,7 +66,9 @@ const Close = styled.div`
   border-radius: 4px;
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  margin-bottom: 8px;
+`;
 
 const Footer = styled.div`
   display: flex;
@@ -127,7 +129,7 @@ export const Modal = (props: ReactModal.Props & Props) => {
             <ICClose onClick={props.close} />
           </Close>
         </Header>
-        <Content></Content>
+        <Content>{props.content}</Content>
         <Footer>
           {cancel && (
             <CancelButton size="md" onClick={props.close}>

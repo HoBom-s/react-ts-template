@@ -5,6 +5,7 @@ import {
   useModal,
   ErrorMessage,
   SuccessMessage,
+  Info,
 } from "@/lib";
 
 const App = () => {
@@ -23,7 +24,7 @@ const App = () => {
       <Modal
         isOpen={isOpen}
         title="Hello"
-        content={<p>Hello</p>}
+        content={<Info title="Toast" text="Toast content" />}
         footer={{
           cancel: {
             label: "Cancel",
@@ -35,8 +36,7 @@ const App = () => {
         }}
         close={handleModalStateChange}
       />
-      <ErrorMessage message="error message" />
-      <SuccessMessage message="success message" />
+      {/* <Info title="Toast" text="Toast content" /> */}
     </div>
   );
 };
