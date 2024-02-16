@@ -1,4 +1,4 @@
-import { Button, Input, Modal, useModal, Info } from "@/lib";
+import { Button, Input, Modal, useModal, Info, Form } from "@/lib";
 
 const App = () => {
   const { isOpen, handleModalStateChange } = useModal();
@@ -28,6 +28,13 @@ const App = () => {
         }}
         close={handleModalStateChange}
       />
+      <Form>
+        <div>
+          <Input type="text" />
+          <Input type="email" />
+          <Input type="password" />
+        </div>
+      </Form>
     </div>
   );
 };
