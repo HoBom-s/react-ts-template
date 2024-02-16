@@ -1,6 +1,6 @@
 import storage from "./storage/storage";
 
-import { useModal } from "./hooks";
+import { useForm, useModal } from "./hooks";
 
 import { Button } from "./ui/Button/Button";
 import { Form } from "./ui/Form/Form";
@@ -12,6 +12,6 @@ import { SuccessMessage, ErrorMessage } from "./ui/Toast/Toast";
 
 export { storage };
 
-export { useModal };
+export { useForm, useModal };
 
 export { Icon, Button, Form, Info, Input, Modal, SuccessMessage, ErrorMessage };
