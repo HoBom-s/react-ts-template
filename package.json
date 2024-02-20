@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:docker": "docker-compose -f docker-compose.yml up",
     "build": "tsc && vite build",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
