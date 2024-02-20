@@ -16,4 +16,5 @@ services:
     volumes:
       - ./src:/app/src
       - ./public:/app/public
-      - /usr/src/app/node_modules
+    
+    entrypoint: ["yarn", "dev"]

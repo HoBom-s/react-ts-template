@@ -6,13 +6,15 @@ ENV NODE_ENV development
 ## Directory
 WORKDIR /usr/src/app
 
-COPY package.json .
+RUN npm install -g yarn
 
-RUN npm install
+COPY package.json yarn.lock ./
+
+RUN yarn install --immutable
 
 COPY ./ ./
 
 EXPOSE 3000
 
 ## Dev mode start
-CMD ["npm", "run", "dev"]
+CMD ["yarn", "dev"]
