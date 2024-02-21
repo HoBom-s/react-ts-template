@@ -34,4 +34,5 @@ export default defineConfig({
     // minify
     minify: true,
   },
+  cacheDir: "./.vite",
 });
