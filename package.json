@@ -12,9 +12,12 @@
     "lint-diff": "eslint $(git diff --name-only --diff-filter=duxb origin/$BASE origin/$HEAD | grep -E '\\.((j|t)sx?)$' | xargs)",
     "preview": "vite preview"
   },
+  "installConfig": {
+    "pnp": true
+  },
   "dependencies": {
     "copy-to-clipboard": "^3.3.3",
-    "esbuild": "^0.20.1",
+    "esbuild": "0.18.20",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
