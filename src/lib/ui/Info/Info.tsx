@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import copy from "copy-to-clipboard";
-import { toast } from "react-toastify";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 
 import { NORMAL, SMALL } from "@/styles";
 import { COLORS, FLEX_CENTER } from "@/utils";
 import { SuccessMessage } from "../Toast/Toast";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const Wrapper = styled.div`
   & > div {
@@ -70,6 +72,11 @@ export const Info = ({ title, text, icon = true }: Props) => {
           {icon && (
             <div>
               <InfoBox onClick={handleInfoBoxClick}>COPY</InfoBox>
+              <ToastContainer
+                style={{ overflow: "hidden" }}
+                transition={Bounce}
+                icon={false}
+              />
             </div>
           )}
         </InfoInput>

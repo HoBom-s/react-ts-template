@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-import { NORMAL } from "@/styles";
+import { NORMAL, SMALL } from "@/styles";
 import { COLORS } from "@/utils";
 
 const Wrapper = styled.div`
   display: flex;
+  align-items: center;
   ${NORMAL};
   font-weight: 500;
   color: ${COLORS.white};
 `;
 
-const SuccessIcon = styled.div`
+const SuccessContents = styled.div`
   width: 20px;
   height: 20px;
   margin-right: 16px;
@@ -19,13 +20,18 @@ const SuccessIcon = styled.div`
   background-image: url(/icons/ic-success-filled.svg);
 `;
 
-const ErrorIcon = styled.div`
+const ErrorContents = styled.div`
   width: 20px;
   height: 20px;
   margin-right: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/icons/ic-error-filled.svg);
+`;
+
+const Text = styled.p`
+  ${SMALL};
+  color: ${COLORS.black800};
 `;
 
 interface Props {
@@ -35,7 +41,7 @@ interface Props {
 export const SuccessMessage = ({ message }: Props) => {
   return (
     <Wrapper>
-      <SuccessIcon /> {message}
+      <SuccessContents /> <Text>{message}</Text>
     </Wrapper>
   );
 };
@@ -43,7 +49,7 @@ export const SuccessMessage = ({ message }: Props) => {
 export const ErrorMessage = ({ message }: Props) => {
   return (
     <Wrapper>
-      <ErrorIcon /> {message}
+      <ErrorContents /> <Text>{message}</Text>
     </Wrapper>
   );
 };
