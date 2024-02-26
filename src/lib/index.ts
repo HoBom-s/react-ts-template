@@ -3,6 +3,7 @@ import storage from "./storage/storage";
 import { useForm, useModal } from "./hooks";
 
 import { Button } from "./ui/Button/Button";
+import { ChoiceItem } from "./ui/ChoiceItem/ChoiceItem";
 import { Form } from "./ui/Form/Form";
 import { Icon } from "./ui/Icon/Icon";
 import { Info } from "./ui/Info/Info";
@@ -14,4 +15,14 @@ export { storage };
 
 export { useForm, useModal };
 
-export { Icon, Button, Form, Info, Input, Modal, SuccessMessage, ErrorMessage };
+export {
+  Icon,
+  Button,
+  ChoiceItem,
+  Form,
+  Info,
+  Input,
+  Modal,
+  SuccessMessage,
+  ErrorMessage,
+};
