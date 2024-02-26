@@ -2,6 +2,7 @@ import storage from "./storage/storage";
 
 import { useForm, useModal } from "./hooks";
 
+import { BreadCrumbs, Crumb } from "./ui/BreadCrumbs/BreadCrumbs";
 import { Button } from "./ui/Button/Button";
 import { ChoiceItem } from "./ui/ChoiceItem/ChoiceItem";
 import { Form } from "./ui/Form/Form";
@@ -16,10 +17,12 @@ export { storage };
 export { useForm, useModal };
 
 export {
-  Icon,
+  BreadCrumbs,
+  Crumb,
   Button,
   ChoiceItem,
   Form,
+  Icon,
   Info,
   Input,
   Modal,
