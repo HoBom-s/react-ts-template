@@ -26,7 +26,10 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@tanstack/react-query", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:5.24.1"],\
           ["@types/jest", "npm:29.5.12"],\
+          ["@types/lodash.debounce", "npm:4.0.9"],\
+          ["@types/lodash.throttle", "npm:4.1.9"],\
           ["@types/node", "npm:20.11.19"],\
           ["@types/react", "npm:18.2.57"],\
           ["@types/react-dom", "npm:18.2.19"],\
@@ -41,6 +44,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:0.4.5"],\
           ["husky", "npm:9.0.11"],\
+          ["lodash.debounce", "npm:4.0.8"],\
+          ["lodash.throttle", "npm:4.1.1"],\
           ["normalize.css", "npm:8.0.1"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
@@ -928,6 +933,38 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@tanstack/query-core", [\
+      ["npm:5.24.1", {\
+        "packageLocation": "./.yarn/cache/@tanstack-query-core-npm-5.24.1-3d46abb3a9-b1d0363096.zip/node_modules/@tanstack/query-core/",\
+        "packageDependencies": [\
+          ["@tanstack/query-core", "npm:5.24.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@tanstack/react-query", [\
+      ["npm:5.24.1", {\
+        "packageLocation": "./.yarn/cache/@tanstack-react-query-npm-5.24.1-729e2b7a11-2c22e0e4fe.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "npm:5.24.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:5.24.1", {\
+        "packageLocation": "./.yarn/__virtual__/@tanstack-react-query-virtual-b9e1e9b886/0/cache/@tanstack-react-query-npm-5.24.1-729e2b7a11-2c22e0e4fe.zip/node_modules/@tanstack/react-query/",\
+        "packageDependencies": [\
+          ["@tanstack/react-query", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:5.24.1"],\
+          ["@tanstack/query-core", "npm:5.24.1"],\
+          ["@types/react", "npm:18.2.57"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/babel__core", [\
       ["npm:7.20.5", {\
         "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.20.5-4d95f75eab-bdee3bb699.zip/node_modules/@types/babel__core/",\
@@ -1059,6 +1096,35 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/keyv", "npm:3.1.4"],\
           ["@types/node", "npm:20.11.19"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/lodash", [\
+      ["npm:4.14.202", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.202-76de3e302b-6064d43c8f.zip/node_modules/@types/lodash/",\
+        "packageDependencies": [\
+          ["@types/lodash", "npm:4.14.202"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/lodash.debounce", [\
+      ["npm:4.0.9", {\
+        "packageLocation": "./.yarn/cache/@types-lodash.debounce-npm-4.0.9-dcafdcd4bd-9fbb24e5e5.zip/node_modules/@types/lodash.debounce/",\
+        "packageDependencies": [\
+          ["@types/lodash.debounce", "npm:4.0.9"],\
+          ["@types/lodash", "npm:4.14.202"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/lodash.throttle", [\
+      ["npm:4.1.9", {\
+        "packageLocation": "./.yarn/cache/@types-lodash.throttle-npm-4.1.9-64930c2c38-93f7096dca.zip/node_modules/@types/lodash.throttle/",\
+        "packageDependencies": [\
+          ["@types/lodash.throttle", "npm:4.1.9"],\
+          ["@types/lodash", "npm:4.14.202"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2830,7 +2896,10 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["hobom-react-ts-template", "workspace:."],\
+          ["@tanstack/react-query", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:5.24.1"],\
           ["@types/jest", "npm:29.5.12"],\
+          ["@types/lodash.debounce", "npm:4.0.9"],\
+          ["@types/lodash.throttle", "npm:4.1.9"],\
           ["@types/node", "npm:20.11.19"],\
           ["@types/react", "npm:18.2.57"],\
           ["@types/react-dom", "npm:18.2.19"],\
@@ -2845,6 +2914,8 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:25c3ac2074b59d56298d557ff6a90aa39e6186b385b62fcb897006247dac54af72f96e6c187742c5f17708ef3fe8b8e900009a561ea275538c2a7d811e52dce7#npm:0.4.5"],\
           ["husky", "npm:9.0.11"],\
+          ["lodash.debounce", "npm:4.0.8"],\
+          ["lodash.throttle", "npm:4.1.1"],\
           ["normalize.css", "npm:8.0.1"],\
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
@@ -3273,11 +3344,29 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash.debounce", [\
+      ["npm:4.0.8", {\
+        "packageLocation": "./.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-762998a63e.zip/node_modules/lodash.debounce/",\
+        "packageDependencies": [\
+          ["lodash.debounce", "npm:4.0.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lodash.merge", [\
       ["npm:4.6.2", {\
         "packageLocation": "./.yarn/cache/lodash.merge-npm-4.6.2-77cb4416bf-402fa16a1e.zip/node_modules/lodash.merge/",\
         "packageDependencies": [\
           ["lodash.merge", "npm:4.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.throttle", [\
+      ["npm:4.1.1", {\
+        "packageLocation": "./.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-14628013e9.zip/node_modules/lodash.throttle/",\
+        "packageDependencies": [\
+          ["lodash.throttle", "npm:4.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
