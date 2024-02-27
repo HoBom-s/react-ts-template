@@ -25,6 +25,7 @@ import {
   BreadCrumbs,
   Crumb,
   Button,
+  Card,
   ChoiceItem,
   Form,
   Icon,
@@ -34,6 +35,7 @@ import {
   OverlayHandler,
   SuccessMessage,
   ErrorMessage,
+  RenderProps,
 } from "./ui";
 
 // utils
@@ -70,6 +72,7 @@ export {
   BreadCrumbs,
   Crumb,
   Button,
+  Card,
   ChoiceItem,
   Form,
   Icon,
@@ -79,6 +82,7 @@ export {
   OverlayHandler,
   SuccessMessage,
   ErrorMessage,
+  RenderProps,
 };
 
 export { assert, generateUid };

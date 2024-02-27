@@ -1,4 +1,4 @@
-import { useFunnel } from "@/lib";
+import { useFunnel, Card } from "@/lib";
 
 export const Main = () => {
   const [Funnel, state, setState] = useFunnel(["step1", "step2"], {
@@ -27,6 +27,11 @@ export const Main = () => {
           </div>
         </Funnel.Step>
       </Funnel>
+      <Card
+        header={<div>Header</div>}
+        contents={<div>Contents</div>}
+        footer={<div>Footer</div>}
+      />
     </div>
   );
 };
