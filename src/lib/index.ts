@@ -7,7 +7,16 @@ import storage from "./storage/storage";
 import { OverlayContext } from "./context";
 
 // custom hook
-import { useAsyncError, useForm, useModal, useOverlay } from "./hooks";
+import {
+  useDebounce,
+  useAsyncError,
+  useForm,
+  useModal,
+  useOverlay,
+  usePreservedCallback,
+  usePreservedReference,
+  useThrottle,
+} from "./hooks";
 
 // ui
 import { BreadCrumbs, Crumb } from "./ui/BreadCrumbs/BreadCrumbs";
@@ -33,7 +42,16 @@ export { storage };
 
 export { OverlayContext };
 
-export { useAsyncError, useForm, useModal, useOverlay };
+export {
+  useDebounce,
+  useAsyncError,
+  useForm,
+  useModal,
+  useOverlay,
+  usePreservedCallback,
+  usePreservedReference,
+  useThrottle,
+};
 
 export {
   BreadCrumbs,
