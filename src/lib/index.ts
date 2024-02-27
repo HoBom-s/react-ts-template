@@ -11,11 +11,13 @@ import {
   useDebounce,
   useAsyncError,
   useForm,
+  useFunnel,
   useModal,
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
   useThrottle,
+  useQueryString,
 } from "./hooks";
 
 // ui
@@ -31,10 +33,15 @@ import { OverlayHandler } from "./ui/OverlayHandler/OverlayHandler";
 import { SuccessMessage, ErrorMessage } from "./ui/Toast/Toast";
 
 // utils
-import { generateUid } from "./utils";
+import { assert, generateUid } from "./utils";
 
 // types
-import type { OverlayElem, OverlayProps, OverlayRef } from "./types";
+import type {
+  NonEmptyArray,
+  OverlayElem,
+  OverlayProps,
+  OverlayRef,
+} from "./types";
 // ============================== IMPORT ============================== //
 
 // ============================== EXPORT ============================== //
@@ -46,11 +53,13 @@ export {
   useDebounce,
   useAsyncError,
   useForm,
+  useFunnel,
   useModal,
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
   useThrottle,
+  useQueryString,
 };
 
 export {
@@ -68,7 +77,7 @@ export {
   ErrorMessage,
 };
 
-export { generateUid };
+export { assert, generateUid };
 
-export type { OverlayElem, OverlayProps, OverlayRef };
+export type { NonEmptyArray, OverlayElem, OverlayProps, OverlayRef };
 // ============================== EXPORT ============================== //
