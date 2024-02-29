@@ -39,7 +39,7 @@ import {
 } from "./ui";
 
 // utils
-import { assert, generateUid } from "./utils";
+import { assert, match, generateUid } from "./utils";
 
 // types
 import type {
@@ -85,7 +85,7 @@ export {
   RenderProps,
 };
 
-export { assert, generateUid };
+export { assert, match, generateUid };
 
 export type { NonEmptyArray, OverlayElem, OverlayProps, OverlayRef };
 // ============================== EXPORT ============================== //
