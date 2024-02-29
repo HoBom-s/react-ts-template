@@ -41,6 +41,9 @@ import {
 // utils
 import { assert, match, generateUid } from "./utils";
 
+// http
+import { get, post, patch, del } from "./http";
+
 // types
 import type {
   NonEmptyArray,
@@ -54,6 +57,8 @@ import type {
 export { storage };
 
 export { OverlayContext };
+
+export { get, post, patch, del };
 
 export {
   useDebounce,
