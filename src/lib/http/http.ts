@@ -78,6 +78,14 @@ export class Http implements HttpInterface {
               console.error(`Forbidden :: ${err.config?.headers}`);
               break;
 
+            case HttpStatusCode.BadGateway:
+              while (this.retryCount++ < this.retryMaxCount)
+                this.backoffRequest(
+                  RETRY_TIME_COUNT * this.retryCount,
+                  err.config as AxiosRequestConfig,
+                );
+              break;
+
             default:
               console.error(
                 `Error :: status: ${err.status} message: ${err.message}`,
