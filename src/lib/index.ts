@@ -12,7 +12,9 @@ import {
   useAsyncError,
   useForm,
   useFunnel,
+  useImageLazyLoading,
   useModal,
+  useObserver,
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
@@ -29,6 +31,7 @@ import {
   ChoiceItem,
   Form,
   Icon,
+  Img,
   Info,
   Input,
   Modal,
@@ -36,6 +39,7 @@ import {
   SuccessMessage,
   ErrorMessage,
   RenderProps,
+  Spinner,
 } from "./ui";
 
 // utils
@@ -65,7 +69,9 @@ export {
   useAsyncError,
   useForm,
   useFunnel,
+  useImageLazyLoading,
   useModal,
+  useObserver,
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
@@ -81,6 +87,7 @@ export {
   ChoiceItem,
   Form,
   Icon,
+  Img,
   Info,
   Input,
   Modal,
@@ -88,6 +95,7 @@ export {
   SuccessMessage,
   ErrorMessage,
   RenderProps,
+  Spinner,
 };
 
 export { assert, match, generateUid };

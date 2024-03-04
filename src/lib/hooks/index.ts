@@ -2,7 +2,9 @@ import { useDebounce } from "./debounce/useDebounce";
 import { useAsyncError } from "./error/useAsyncError";
 import { useForm } from "./form/useForm";
 import { useFunnel } from "./funnel/useFunnel";
+import { useImageLazyLoading } from "./image-lazy-load/useImageLazyLoading";
 import { useModal } from "./modal/useModal";
+import { useObserver } from "./observer/useObserver";
 import { useOverlay } from "./overlay/useOverlay";
 import { usePreservedCallback } from "./preserved-callback/usePreservedCallback";
 import { usePreservedReference } from "./preserved-reference/usePreservedReference";
@@ -16,7 +18,9 @@ export {
   useAsyncError,
   useForm,
   useFunnel,
+  useImageLazyLoading,
   useModal,
+  useObserver,
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
