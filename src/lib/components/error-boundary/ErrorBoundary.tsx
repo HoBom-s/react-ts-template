@@ -91,6 +91,10 @@ class BaseErrorBoundary extends Component<
 /**
  * Render or useEffect에서 발생한 Error를 잡을 수 있는 ErrorBoundary를 정의한다.
  *
+ * @param {Function} fallback       Fallback render component
+ * @param {Function} onError        `optional` Error 발생 시 호출 될 event handler
+ * @param {Function} onResetError   `optional` Error 초기화 시 호출될 event handler
+ *
  * @Note
  *      `onError()`, `onResetError()` props의 경우
  *      optional 하므로 특정 action을 취해야 할 경우에만
