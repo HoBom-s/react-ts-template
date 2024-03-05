@@ -1,5 +1,8 @@
 // ============================== IMPORT ============================== //
 
+// components
+import { ErrorBoundary } from "./components";
+
 // storage
 import storage from "./storage/storage";
 
@@ -58,6 +61,8 @@ import type {
 // ============================== IMPORT ============================== //
 
 // ============================== EXPORT ============================== //
+export { ErrorBoundary };
+
 export { storage };
 
 export { OverlayContext };
