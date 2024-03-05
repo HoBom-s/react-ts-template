@@ -13,6 +13,7 @@ import { OverlayContext } from "./context";
 import {
   useDebounce,
   useAsyncError,
+  useErrorBoundary,
   useForm,
   useFunnel,
   useImageLazyLoading,
@@ -72,6 +73,7 @@ export { get, post, patch, del };
 export {
   useDebounce,
   useAsyncError,
+  useErrorBoundary,
   useForm,
   useFunnel,
   useImageLazyLoading,

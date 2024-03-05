@@ -1,5 +1,6 @@
 import { useDebounce } from "./debounce/useDebounce";
 import { useAsyncError } from "./error/useAsyncError";
+import { useErrorBoundary } from "./error/useErrorBoundary";
 import { useForm } from "./form/useForm";
 import { useFunnel } from "./funnel/useFunnel";
 import { useImageLazyLoading } from "./image-lazy-load/useImageLazyLoading";
@@ -16,6 +17,7 @@ import type { FunnelProps, StepProps } from "./funnel/Funnel";
 export {
   useDebounce,
   useAsyncError,
+  useErrorBoundary,
   useForm,
   useFunnel,
   useImageLazyLoading,
