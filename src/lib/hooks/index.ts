@@ -13,6 +13,7 @@ import { useQueryFetch } from "./query/useQueryFetch";
 import { useSuspenseQueryFetch } from "./query/useSuspenseQueryFetch";
 import { useThrottle } from "./throttle/useThrottle";
 import { useQueryString } from "./query-string/useQueryString";
+import { useSuspenseFetch } from "./suspense-fetch/useSuspenseFetch";
 
 import type { FunnelProps, StepProps } from "./funnel/Funnel";
 
@@ -32,6 +33,7 @@ export {
   useSuspenseQueryFetch,
   useThrottle,
   useQueryString,
+  useSuspenseFetch,
 };
 
 export type { FunnelProps, StepProps };

@@ -26,6 +26,7 @@ import {
   useQueryString,
   useQueryFetch,
   useSuspenseQueryFetch,
+  useSuspenseFetch,
 } from "./hooks";
 
 // ui
@@ -88,6 +89,7 @@ export {
   useQueryString,
   useQueryFetch,
   useSuspenseQueryFetch,
+  useSuspenseFetch,
 };
 
 export {
