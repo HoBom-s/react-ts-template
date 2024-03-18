@@ -9,6 +9,8 @@ import { useObserver } from "./observer/useObserver";
 import { useOverlay } from "./overlay/useOverlay";
 import { usePreservedCallback } from "./preserved-callback/usePreservedCallback";
 import { usePreservedReference } from "./preserved-reference/usePreservedReference";
+import { useQueryFetch } from "./query/useQueryFetch";
+import { useSuspenseQueryFetch } from "./query/useSuspenseQueryFetch";
 import { useThrottle } from "./throttle/useThrottle";
 import { useQueryString } from "./query-string/useQueryString";
 
@@ -26,6 +28,8 @@ export {
   useOverlay,
   usePreservedCallback,
   usePreservedReference,
+  useQueryFetch,
+  useSuspenseQueryFetch,
   useThrottle,
   useQueryString,
 };
