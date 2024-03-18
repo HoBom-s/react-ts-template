@@ -1,3 +1,4 @@
+import { useCache } from "./cache/useCache";
 import { useDebounce } from "./debounce/useDebounce";
 import { useAsyncError } from "./error/useAsyncError";
 import { useErrorBoundary } from "./error/useErrorBoundary";
@@ -18,6 +19,7 @@ import { useSuspenseFetch } from "./suspense-fetch/useSuspenseFetch";
 import type { FunnelProps, StepProps } from "./funnel/Funnel";
 
 export {
+  useCache,
   useDebounce,
   useAsyncError,
   useErrorBoundary,

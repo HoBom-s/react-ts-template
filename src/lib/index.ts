@@ -7,7 +7,8 @@ import { ErrorBoundary } from "./components";
 import storage from "./storage/storage";
 
 // context
-import { OverlayContext } from "./context";
+import { CacheContext, CacheProvider } from "./context";
+import { OverlayContext, OverlayProvider } from "./context";
 
 // custom hook
 import {
@@ -62,6 +63,8 @@ import type {
   OverlayProps,
   OverlayRef,
 } from "./types";
+
+import type { CacheContextType } from "./context";
 // ============================== IMPORT ============================== //
 
 // ============================== EXPORT ============================== //
@@ -69,7 +72,7 @@ export { ErrorBoundary };
 
 export { storage };
 
-export { OverlayContext };
+export { CacheContext, CacheProvider, OverlayContext, OverlayProvider };
 
 export { get, post, patch, del };
 
@@ -113,5 +116,11 @@ export {
 
 export { assert, match, generateUid };
 
-export type { NonEmptyArray, OverlayElem, OverlayProps, OverlayRef };
+export type {
+  NonEmptyArray,
+  OverlayElem,
+  OverlayProps,
+  OverlayRef,
+  CacheContextType,
+};
 // ============================== EXPORT ============================== //

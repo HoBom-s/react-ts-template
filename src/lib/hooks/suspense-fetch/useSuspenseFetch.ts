@@ -27,7 +27,8 @@ export const useSuspenseFetch = <Params, Result>(
         .then(resolve)
         .catch((e) => throwAsyncError(e)),
     );
-  }, [params, config, fetch, resolve, throwAsyncError]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [params]);
 
   if (_status === "pending" && _promise) {
     throw _promise;
