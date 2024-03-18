@@ -24,6 +24,8 @@ import {
   usePreservedReference,
   useThrottle,
   useQueryString,
+  useQueryFetch,
+  useSuspenseQueryFetch,
 } from "./hooks";
 
 // ui
@@ -84,6 +86,8 @@ export {
   usePreservedReference,
   useThrottle,
   useQueryString,
+  useQueryFetch,
+  useSuspenseQueryFetch,
 };
 
 export {
