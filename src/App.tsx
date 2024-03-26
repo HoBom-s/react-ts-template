@@ -1,5 +1,6 @@
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { PublicRouter } from "./routes";
+import { ErrorBoundary } from "./lib";
 
 const RETRY_COUNT: number = 0;
 const STALE_TIME: number = 1 * 60 * 1000;
@@ -19,9 +20,11 @@ const queryClient = new QueryClient({
 
 const App = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      <PublicRouter />
-    </QueryClientProvider>
+    <ErrorBoundary fallback={() => <div>Error !</div>}>
+      <QueryClientProvider client={queryClient}>
+        <PublicRouter />
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 };
 
