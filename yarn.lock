@@ -703,21 +703,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.24.1":
-  version: 5.24.1
-  resolution: "@tanstack/query-core@npm:5.24.1"
-  checksum: 10c0/b1d0363096dde7a7b021c0565b9d7f2678d5348225d2fec74f8ee97fb2c294a8de1030a6c2ceb24ffd08daecf006ec17550f1db97c74f817d4fab33295e852ef
+"@tanstack/query-core@npm:5.49.0":
+  version: 5.49.0
+  resolution: "@tanstack/query-core@npm:5.49.0"
+  checksum: 10c0/146eff5b503906074fd27d043f232b69e577a2529d73d59f6ee70e068794796b6cf5dc164ce0cd07ea713b3f48b4ff5ef794f05ec4ff71b556d72ac1cb8ba3c9
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.24.1":
-  version: 5.24.1
-  resolution: "@tanstack/react-query@npm:5.24.1"
+"@tanstack/react-query@npm:^5.49.0":
+  version: 5.49.0
+  resolution: "@tanstack/react-query@npm:5.49.0"
   dependencies:
-    "@tanstack/query-core": "npm:5.24.1"
+    "@tanstack/query-core": "npm:5.49.0"
   peerDependencies:
     react: ^18.0.0
-  checksum: 10c0/2c22e0e4fea282d77e8a54d9118b555d831ab51ec5eec2f5291a32ebd722967b8b3d41b9a8ceea7044decc3d0435c33161ebe82e6dd509277418d371a268a8f7
+  checksum: 10c0/a2259ce739a813407a2314e32efa3f6e3f4d3ae283651559f84dbb477585cbe808a43ce8dad161c8b1858e0f66447a11d3a9a6da807e1e6bb31141a04ce5a313
   languageName: node
   linkType: hard
 
@@ -1691,6 +1691,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"date-fns@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "date-fns@npm:3.6.0"
+  checksum: 10c0/0b5fb981590ef2f8e5a3ba6cd6d77faece0ea7f7158948f2eaae7bbb7c80a8f63ae30b01236c2923cf89bb3719c33aeb150c715ea4fe4e86e37dcf06bed42fb6
+  languageName: node
+  linkType: hard
+
 "debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.3, debug@npm:^4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
@@ -2426,7 +2433,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hobom-react-ts-template@workspace:."
   dependencies:
-    "@tanstack/react-query": "npm:^5.24.1"
+    "@tanstack/react-query": "npm:^5.49.0"
     "@types/jest": "npm:^29.5.12"
     "@types/lodash.debounce": "npm:^4"
     "@types/lodash.throttle": "npm:^4"
@@ -2440,6 +2447,7 @@ __metadata:
     "@yarnpkg/pnpify": "npm:^4.0.1"
     axios: "npm:^1.6.7"
     copy-to-clipboard: "npm:^3.3.3"
+    date-fns: "npm:^3.6.0"
     esbuild: "npm:0.18.20"
     eslint: "npm:^8.45.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
